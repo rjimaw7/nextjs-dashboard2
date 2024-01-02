@@ -5,9 +5,15 @@ import { lusitana } from '@/app/ui/fonts';
 import { fetchCardData } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
 
 
  
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
+
+
 export default async function Dashboard() {
 
   // const revenue = await fetchRevenue();

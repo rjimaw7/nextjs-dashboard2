@@ -6,6 +6,8 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { fetchInvoicesPages } from '@/app/lib/data';
 import { Suspense } from 'react';
+import { Metadata } from 'next';
+
 
 
 interface Props{
@@ -14,6 +16,11 @@ interface Props{
     page?: string;
   }
 }
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
+
 
 const Invoices = async ({searchParams} : Props) => {
 
